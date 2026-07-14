@@ -1,34 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tic Tac Toe</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Tic Tac Toe</h1>
-        <p id="status">Current Player: X</p>
-        <div class="scoreboard">
-            <p>Player X: <span id="scoreX">0</span></p>
-            <p>Player O: <span id="scoreO">0</span></p>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Tic Tac Toe</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Tic Tac Toe</h1>
+            <p id="status">Current Player: X</p>
+            <div class="scoreboard">
+                <p>Player X: <span id="scoreX">0</span></p>
+                <p>Player O: <span id="scoreO">0</span></p>
+            </div>
+            <div class="game-board">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <button id="resetButton">Reset Game</button>
+            <div id="winnerMessage" class="winner-message"></div>
+            
         </div>
-        <div class="game-board">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-        </div>
-        <button id="resetButton">Reset Game</button>
-        <div id="winnerMessage" class="winner-message"></div>
-        
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+        <script src="script.js"></script>
+    </body>
+    </html>

@@ -61,3 +61,10 @@ resetButton.addEventListener("click", () => {
     gameActive = true;
     statusDisplay.textContent = `Current Player: ${currentPlayer}`;
 });
+
+WinnerMessage .addEventListener("click", () => {
+    cells.forEach(cell => cell.textContent = "");
+    currentPlayer = playerX;
+    gameActive = true;
+    statusDisplay.textContent = `Current Player: ${currentPlayer}`;
+}); 
