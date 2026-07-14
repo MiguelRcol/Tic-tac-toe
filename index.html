@@ -1,34 +1,55 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Tic Tac Toe</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Tic Tac Toe</h1>
-            <p id="status">Current Player: X</p>
-            <div class="scoreboard">
-                <p>Player X: <span id="scoreX">0</span></p>
-                <p>Player O: <span id="scoreO">0</span></p>
-            </div>
-            <div class="game-board">
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
-            </div>
-            <button id="resetButton">Reset Game</button>
-            <div id="winnerMessage" class="winner-message"></div>
-            
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Tic Tac Toe</h1>
+
+        <p id="status" aria-live="polite">
+            Current Player: X
+        </p>
+
+        <div class="scoreboard">
+            <p>
+                Player X:
+                <span id="scoreX">0</span>
+            </p>
+
+            <p>
+                Player O:
+                <span id="scoreO">0</span>
+            </p>
         </div>
-        <script src="script.js"></script>
-    </body>
-    </html>
+
+        <div class="game-board">
+            <button class="cell" data-index="0" aria-label="Cell 1"></button>
+            <button class="cell" data-index="1" aria-label="Cell 2"></button>
+            <button class="cell" data-index="2" aria-label="Cell 3"></button>
+            <button class="cell" data-index="3" aria-label="Cell 4"></button>
+            <button class="cell" data-index="4" aria-label="Cell 5"></button>
+            <button class="cell" data-index="5" aria-label="Cell 6"></button>
+            <button class="cell" data-index="6" aria-label="Cell 7"></button>
+            <button class="cell" data-index="7" aria-label="Cell 8"></button>
+            <button class="cell" data-index="8" aria-label="Cell 9"></button>
+        </div>
+
+        <p
+            id="winnerMessage"
+            class="winner-message"
+            aria-live="polite"
+        ></p>
+
+        <button id="resetButton" class="reset-button">
+            Reset Game
+        </button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
